@@ -1,3 +1,7 @@
+
+const apikey = "773b58f681fb786fafdb8392e8b8a75ddc177fd1"
+
+
 const btnEl = document.getElementById("btn");
 const emojiNameEl = document.getElementById("emoji-name");
 
@@ -5,7 +9,7 @@ const emoji = [];
 
 async function getEmoji() {
   let response = await fetch(
-    "https://emoji-api.com/emojis?access_key=773b58f681fb786fafdb8392e8b8a75ddc177fd1"
+    `https://emoji-api.com/emojis?access_key=${apikey}`
   );
 
   data = await response.json();
